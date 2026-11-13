@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+.DS_Store
+.runtime/
+handoff/
+*.log
+.env
+notebooks/
+scripts/build_notebooks.py
+scripts/run_notebooks.py
+scripts/package_handoff.py
+.private/
+report/

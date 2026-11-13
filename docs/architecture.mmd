@@ -1,0 +1,17 @@
+flowchart LR
+    A[Open-Meteo API: ERA5] --> B[API client]
+    B --> R[Preserved raw JSON and CSV]
+    R --> P[Kafka Producer: JSON + run_id]
+    P --> K[Real Kafka broker: 1 topic / 1 partition]
+    K --> C[Kafka Consumer: count + SHA-256]
+    C --> V[Pandera validation]
+    V --> Q[Invalid records and failure reasons]
+    V --> T[pandas + NumPy cleaning and transformation]
+    T --> D[SQLite: primary key + unique city/date]
+    D --> I[Load twice: unchanged count and content]
+    I --> E[EDA + five figures + evidence-based findings]
+    B -. stage counts .-> F[Pipeline verification]
+    C -. stage counts .-> F
+    V -. valid / invalid .-> F
+    T -. cleaned count .-> F
+    D -. stored count .-> F

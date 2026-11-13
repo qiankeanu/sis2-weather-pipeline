@@ -1,0 +1,28 @@
+{
+  "run_id": "b2d3a4556a2745a8ac44a66e4a82431a",
+  "counts": {
+    "collected": 1825,
+    "published": 1825,
+    "consumed": 1825,
+    "valid": 1825,
+    "invalid": 0,
+    "after_cleaning": 1825,
+    "stored": 1825
+  },
+  "checks": {
+    "at_least_200": true,
+    "collection_publish_consume_counts": true,
+    "source_and_stream_content": true,
+    "same_run": true,
+    "validation_accounted": true,
+    "cleaning_accounted": true,
+    "database_count": true,
+    "database_exact_content": true,
+    "database_idempotency": true,
+    "no_database_duplicates": true,
+    "negative_validation_tests": true,
+    "no_remaining_missing": true
+  },
+  "all_passed": true,
+  "count_explanation": "Invalid source rows are quarantined; duplicate valid rows are removed. Four intentionally invalid test rows are separate and never part of production counts."
+}

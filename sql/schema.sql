@@ -1,0 +1,21 @@
+CREATE TABLE IF NOT EXISTS weather_daily (
+    record_id TEXT PRIMARY KEY,
+    city TEXT NOT NULL,
+    date TEXT NOT NULL,
+    temperature_min REAL NOT NULL CHECK (temperature_min BETWEEN -90 AND 65),
+    temperature_max REAL NOT NULL CHECK (temperature_max BETWEEN -90 AND 65),
+    temperature_mean REAL NOT NULL,
+    precipitation_mm REAL NOT NULL CHECK (precipitation_mm >= 0),
+    wind_max_kmh REAL NOT NULL CHECK (wind_max_kmh >= 0),
+    weather_code INTEGER NOT NULL,
+    mean_was_imputed INTEGER NOT NULL CHECK (mean_was_imputed IN (0,1)),
+    temperature_range REAL NOT NULL CHECK (temperature_range >= 0),
+    month INTEGER NOT NULL CHECK (month BETWEEN 1 AND 12),
+    season TEXT NOT NULL CHECK (season IN ('Winter','Spring','Summer','Autumn')),
+    is_rainy INTEGER NOT NULL CHECK (is_rainy IN (0,1)),
+    is_frost INTEGER NOT NULL CHECK (is_frost IN (0,1)),
+    is_hot INTEGER NOT NULL CHECK (is_hot IN (0,1)),
+    temperature_anomaly REAL NOT NULL,
+    UNIQUE(city, date),
+    CHECK (temperature_min <= temperature_mean AND temperature_mean <= temperature_max)
+);

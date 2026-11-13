@@ -1,0 +1,18 @@
+{
+  "run_id": "b2d3a4556a2745a8ac44a66e4a82431a",
+  "processed": 1825,
+  "stored": 1825,
+  "first_load": {
+    "inserted": 0,
+    "stored": 1825,
+    "sha256": "7959a141e100f7cdbcc6f84fcdda4c02893e81ff812f4b1a55c1dfe1f13a6d72"
+  },
+  "second_load": {
+    "inserted": 0,
+    "stored": 1825,
+    "sha256": "7959a141e100f7cdbcc6f84fcdda4c02893e81ff812f4b1a55c1dfe1f13a6d72"
+  },
+  "duplicate_city_dates": 0,
+  "exact_data_match": true,
+  "idempotent": true
+}

@@ -1,0 +1,21 @@
+{
+  "group": "7",
+  "members": [
+    {
+      "name": "Balnur",
+      "part": "API collection and raw data"
+    },
+    {
+      "name": "Kundyz",
+      "part": "Kafka Producer and Consumer"
+    },
+    {
+      "name": "Nurdaulet",
+      "part": "Pandera validation and cleaning"
+    },
+    {
+      "name": "Kian",
+      "part": "SQLite, EDA and pipeline evaluation"
+    }
+  ]
+}
