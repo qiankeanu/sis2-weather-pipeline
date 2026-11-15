@@ -1,0 +1,8 @@
+{
+  "run_id": "b2d3a4556a2745a8ac44a66e4a82431a",
+  "broker": "127.0.0.1:9092",
+  "topic": "sis2-weather-daily",
+  "published": 1825,
+  "dataset_sha256": "7c89ceadc32cba28bbd511ab3332748dc910e0ff82210b6334b1b5c6477b8b3c",
+  "finished_at_utc": "2026-11-13T15:58:00.605749+00:00"
+}

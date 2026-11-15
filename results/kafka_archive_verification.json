@@ -1,0 +1,6 @@
+{
+  "version": "3.9.1",
+  "official_checksum_url": "https://archive.apache.org/dist/kafka/3.9.1/kafka_2.13-3.9.1.tgz.sha512",
+  "sha512": "1ea204ba73411737a275429ca976d440f007ff0957b90b19be41dc5a4bae52617267769be9f0b5791714d0b3c4c760605bd426faea39edd90763585523fa2cfe",
+  "verified": true
+}

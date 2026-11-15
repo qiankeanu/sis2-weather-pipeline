@@ -1,0 +1,11 @@
+{
+  "run_id": "b2d3a4556a2745a8ac44a66e4a82431a",
+  "consumed": 1825,
+  "dataset_sha256": "7c89ceadc32cba28bbd511ab3332748dc910e0ff82210b6334b1b5c6477b8b3c",
+  "topic": "sis2-weather-daily",
+  "partition": 0,
+  "first_offset": 7300,
+  "last_offset": 9124,
+  "skipped_previous_run_messages": 7300,
+  "termination": "expected count reached; complete dataset hash verified"
+}
