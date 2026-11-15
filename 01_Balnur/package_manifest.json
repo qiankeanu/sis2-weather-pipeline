@@ -1,0 +1,18 @@
+{
+  "part": "01_Balnur",
+  "name": "Dauirkhankyzy Balnur",
+  "student_id": "23B031274",
+  "branch": "codex/balnur-api",
+  "files": {
+    "data/raw_data.csv": "421a96bd5ef5c6ecc15536729f92ff47ec7dc201664d017f091da47fbf15e47d",
+    "data/raw_data.json": "940d5a1410d5278b3f38737fe1cd5ac1f2a0a16c4338246f85d12ba9c6f36692",
+    "data/raw_responses/almaty.json": "9223c97dd2a50cc2d36f7bfa5f8685161330e37e97164b954433726004df4e18",
+    "data/raw_responses/astana.json": "9133396ae3243359a4b8e81c5f2385905eec9aecfb2ad9d2ec3305cfaac7aba2",
+    "data/raw_responses/atyrau.json": "5e23df985a365bf8f03beaeb9eb0ea401330d589991d1cbf39711bb28f3cf8fc",
+    "data/raw_responses/karaganda.json": "0fe5044380f1b0901579ccf36194a4bc57a7cd2d918fa3d66926f7886ffafa48",
+    "data/raw_responses/shymkent.json": "db85d2809518164fac7f64ee428b00cf278df99a896d2502c05b12c11b642223",
+    "docs/data_dictionary.md": "6c244dd30a87d23af58d777bfeff4aa0cbba490e36a023c3f1c2ce49d6d8158a",
+    "results/collection.json": "7a830f177db62da99773cb36b4e26b6f2e09c8df85e379b41ea5b7c9315e487d",
+    "src/api_client.py": "c9d9700fcefc58330a7974c0b95077e1039c9fec3041739a8a5f723cd6d051bf"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "group": "7",
+  "members": [
+    {"name": "Dauirkhankyzy Balnur", "student_id": "23B031274", "part": "API collection and raw data"},
+    {"name": "Abibulla Kundyz", "student_id": "23B030352", "part": "Kafka Producer and Consumer"},
+    {"name": "Kalybay Nurdaulet", "student_id": "23B031515", "part": "Pandera validation and cleaning"},
+    {"name": "Dauletkhan Kian", "student_id": "23B031082", "part": "SQLite, EDA and pipeline evaluation"}
+  ]
+}
