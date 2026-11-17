@@ -17,9 +17,9 @@
 | EDA and ≥3 figures | `src/analysis.py`, five figures | descriptive/category stats, PNGs, `results/findings.md` |
 | Connected stages and counts | `main.py`, `src/verification.py` | counts CSV and final verification JSON |
 | Executable Python scripts | modules in `src/` | documented commands in README |
-| Four individual responsibilities | `TEAM.md`, notebooks | source code, named learning/handoff packages |
+| Four individual responsibilities | `TEAM.md`, `docs/team.json` | responsibility matrix and corresponding source modules |
 | Project report | report generated from actual results | final PDF must match this exact repository version |
-| Oral defence | `TEAM.md` preparation questions | all participants run and explain the complete pipeline |
+| Oral defence | individual project responsibilities | all participants run and explain the complete pipeline |
 
 No machine-learning model is needed. Pipeline evaluation verifies data and systems behaviour.
 The source document also lists a topic/member registration deadline of 01.11.2026 and requires

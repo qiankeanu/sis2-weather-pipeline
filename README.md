@@ -1,10 +1,8 @@
 # SIS 2 — Kazakhstan Weather Data Pipeline
 
-> **Repository assembly status:** shared setup and Kian's SQLite/EDA/evaluation part are uploaded first.
-> Balnur's API, Kundyz's Kafka and Nurdaulet's validation/cleaning will be added through their own branches.
-> Full-pipeline commands and tests apply after those parts are merged. The included database already
-> supports `python -m src.analysis`. See [upload instructions](docs/upload_instructions.md).
-> Learning notebooks are distributed separately. The full PDF report stays local because it includes student identifiers.
+> **Integration status:** API collection and Kafka have been merged. Pandera validation
+> and cleaning are still pending in `main`. Full-pipeline commands and tests require
+> those modules; the included SQLite database supports `python -m src.analysis`.
 
 **API → real Apache Kafka → Pandera → pandas/NumPy → SQLite3 → EDA.**
 
@@ -29,8 +27,8 @@ python -m pip install -r requirements-dev.txt
 ```
 
 On Windows activate with `.venv\Scripts\activate` and use Docker for Kafka.
-In VS Code select `.venv` through **Python: Select Interpreter** and select the same
-environment as the notebook kernel. Python and Jupyter extensions are needed for notebooks.
+In VS Code select `.venv` through **Python: Select Interpreter**. The Python extension
+is recommended for running and debugging the source modules.
 
 ### Start a real Kafka Broker — choose one method
 
@@ -110,13 +108,9 @@ Before switching periods, preserve/rename the old `data/weather.db`: the project
 fails verification if a database contains unrelated old rows. For exact reproduction of the
 included results, use `--use-snapshot`; a live reanalysis archive can be revised by its provider.
 
-### Team and notebooks
+### Team
 
-See `TEAM.md` for the four named responsibilities and files to commit. Notebooks in
-`notebooks/` explain and run the same source functions in small sections. They are internal
-learning/handoff files: the assignment requires executable `.py` modules for submission.
-Their source cells are generated from the modules by `scripts/build_notebooks.py` to prevent
-two different implementations. Rebuild them after changing `.py` source files.
+See `TEAM.md` for the four project responsibilities and their source modules.
 
 ### Additional analysis
 
@@ -138,21 +132,15 @@ database correctness and reproducibility.
 Stop Docker with `docker compose down`; stop native Kafka with Ctrl+C in its terminal.
 Public repository: https://github.com/qiankeanu/sis2-weather-pipeline.
 
-## Report and individual handoff
+## Local PDF report
 
-`report/project_report.pdf` is generated from the actual saved results. The public team file contains first names and roles. Full member names/student IDs
-are stored only in ignored `.private/team_private.json`; the generated full report stays local. Confirm actual individual
-contributions before submission. To rebuild after a pipeline change:
+The report generator uses the saved execution results. Reports are kept locally
+and excluded from this public repository. To generate the project PDF:
 
 ```bash
 python -m pip install -r requirements-report.txt
-python scripts/build_report.py --group YOUR_GROUP_NUMBER
-python scripts/package_handoff.py
+python scripts/build_report.py --group 7
 ```
-
-The four participant ZIPs and one full-project ZIP are in `handoff/`. The archives exclude
-Python environments, Kafka binaries, broker data and caches. Source modules, real input
-data, outputs, notebooks and documentation are included as appropriate for each part.
 
 ## Official references
 
