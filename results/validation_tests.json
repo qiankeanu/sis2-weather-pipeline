@@ -1,0 +1,12 @@
+{
+  "test_records": 4,
+  "detected_invalid": 4,
+  "unexpectedly_accepted": 0,
+  "excluded_from_production": true,
+  "cases": [
+    "negative precipitation",
+    "impossible date",
+    "unknown WMO code",
+    "minimum temperature above maximum"
+  ]
+}

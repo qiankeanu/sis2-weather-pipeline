@@ -1,0 +1,5 @@
+record_id,city,date,temperature_min,temperature_max,temperature_mean,precipitation_mm,wind_max_kmh,weather_code
+almaty_2025-01-01,Almaty,2025-01-01,-4.2,3.0,-1.6,-5.0,10.7,3
+almaty_2025-01-02,Almaty,2025-02-30,-4.6,1.8,-2.4,0.2,10.0,71
+almaty_2025-01-03,Almaty,2025-01-03,-6.3,1.9,-3.0,0.0,10.6,999
+almaty_2025-01-04,Almaty,2025-01-04,60.0,2.5,-2.1,0.0,11.4,3
