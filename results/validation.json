@@ -1,0 +1,17 @@
+{
+  "run_id": "b2d3a4556a2745a8ac44a66e4a82431a",
+  "received": 1825,
+  "valid": 1825,
+  "invalid": 0,
+  "missing_before_validation": {
+    "record_id": 0,
+    "city": 0,
+    "date": 0,
+    "temperature_min": 0,
+    "temperature_max": 0,
+    "temperature_mean": 0,
+    "precipitation_mm": 0,
+    "wind_max_kmh": 0,
+    "weather_code": 0
+  }
+}
